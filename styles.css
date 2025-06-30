@@ -682,8 +682,6 @@ section {
     .engineering-icons {
         position: static;
         transform: none;
-        margin-top: 30px;
-        flex-wrap: wrap;
         gap: 16px;
         padding: 10px 0;
     }
@@ -749,9 +747,7 @@ section {
         grid-template-columns: 1fr;
     }
     .engineering-icons {
-        flex-wrap: wrap;
-        gap: 8px;
-        padding: 6px 0;
+       display: none !important;
     }
     .icon-item {
         min-width: 50px;
