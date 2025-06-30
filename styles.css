@@ -661,7 +661,7 @@ section {
 }
 
 /* Responsive Styles */
-@media (max-width: 992px) {
+@media (max-width: 992px), (max-width: 768px) {
     .hero .container {
         flex-direction: column;
         text-align: center;
@@ -682,49 +682,29 @@ section {
     .engineering-icons {
         position: static;
         transform: none;
+        margin-top: 30px;
+        flex-wrap: wrap;
         gap: 16px;
         padding: 10px 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 80px);
-        background-color: var(--white);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.5s ease;
-    }
-    .nav-links.active {
-        left: 0;
-    }
-    .nav-links li {
-        margin: 15px 0;
-    }
-    .hamburger {
-        display: block;
-    }
-    .title {
-        font-size: 2.2rem;
+        display: none !important;
     }
     .about-cards {
         grid-template-columns: 1fr;
     }
-    .engineering-icons {
-        display: none !important;
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
     .icon-item {
         min-width: 60px;
         padding: 6px 4px;
     }
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .theme-toggle-container {
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: center;
+        width: 100%;
+        padding: 15px 0;
     }
 }
 
