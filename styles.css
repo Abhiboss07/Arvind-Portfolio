@@ -801,13 +801,13 @@ section {
     .footer-content {
         gap: 5px;
     }
-    .cta-buttons {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 10px;
+    .cta-buttons .btn {
+        width: auto;
+        min-width: 110px;
+        font-size: 0.95rem;
+        padding: 0 10px;
+        height: 44px;
+        line-height: 44px;
     }
 }
 
