@@ -706,6 +706,9 @@ section {
         width: 100%;
         padding: 15px 0;
     }
+    .hamburger {
+        display: block;
+    }
 }
 
 @media (max-width: 576px) {
@@ -838,5 +841,30 @@ section {
     font-weight: 600;
     color: var(--primary-dark);
     white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: left 0.5s ease;
+        z-index: 999;
+    }
+    .nav-links.active {
+        left: 0;
+    }
+    .nav-links li {
+        margin: 15px 0;
+    }
+    .hamburger {
+        display: block;
+    }
 }
 
