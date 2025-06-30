@@ -233,6 +233,15 @@ section {
     margin-top: 40px;
 }
 
+.cta-buttons .btn {
+    height: 48px;
+    line-height: 48px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .image-wrapper {
     position: relative;
     width: 100%;
@@ -791,6 +800,14 @@ section {
     }
     .footer-content {
         gap: 5px;
+    }
+    .cta-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
     }
 }
 
