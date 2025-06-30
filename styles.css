@@ -783,12 +783,11 @@ section {
     }
 
     .cta-buttons {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .btn.secondary {
         margin-left: 0;
-        margin-top: 15px;
     }
 
     .experience-grid {
